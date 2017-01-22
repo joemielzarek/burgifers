@@ -9,7 +9,7 @@ $( document ).ready(function() {
 function get() {
   input = $('.inputBox').val();
 
-  $.get("http://api.giphy.com/v1/gifs/search?q=bobs+burgers+'"+ input +"'&api_key=dc6zaTOxFJmzC", function(data, status){
+  $.get("https://api.giphy.com/v1/gifs/search?q=bobs+burgers+'"+ input +"'&api_key=dc6zaTOxFJmzC", function(data, status){
     gif = data.data[i].images.fixed_height.url;
   });
 
