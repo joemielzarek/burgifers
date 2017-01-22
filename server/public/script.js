@@ -2,7 +2,7 @@
 $( document ).ready(function() {
   var i = 0;
   var gif = '';
-  var input = $('.inputBox').val("Taco");
+  var input = $('.inputBox').val("Gene");
 
   get();
 
@@ -14,6 +14,7 @@ function get() {
   });
 
   $('.container').css('background-image', 'url(' + gif + ')');
+  console.log(gif);
 }
 
 
@@ -22,7 +23,7 @@ function get() {
   });
 
   $("button.next").click(function(){
-    i++
+    i++;
     get();
   });
 
