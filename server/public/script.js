@@ -36,7 +36,6 @@ $(document).ready(function() {
         alert(gif);
     });
 
-    console.log($( window ).width());
 
     if ($(window).width() > 1024) {
       $('.controls').mouseenter(function() {
