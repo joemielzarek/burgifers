@@ -21,15 +21,18 @@ $(document).ready(function() {
     });
 
     $("button.submit").click(function() {
+      keyword();
         get();
     });
 
     $("button.next").click(function() {
+      keyword();
         i++;
         get();
     });
 
     $("button.url").click(function() {
+      keyword();
         alert(gif);
     });
 
@@ -40,5 +43,13 @@ $(document).ready(function() {
     $('.controls').mouseleave(function() {
         $('.container').removeClass('blur');
     });
+
+    function keyword() {
+      if ($('.inputBox').val() === "") {
+        alert("Please enter a keyword!");
+        location.reload();
+      }
+    }
+
 
 });
