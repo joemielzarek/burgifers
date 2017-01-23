@@ -96,3 +96,24 @@ button:hover {
     color: red;
     text-decoration: none;
 }
+
+@media screen and (max-width: 500px) {
+  h1 {
+    width: 70vw;
+    top: 10vw;
+    font-size: 5em;
+  }
+
+  input {
+    width: 50vw;
+    font-size: 10em;
+    margin-bottom: 10px;
+    border-radius: 0;
+  }
+
+  button {
+    width: 49vw;
+    height: 9vw;
+    font-size: 3em;
+  }
+}
