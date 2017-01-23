@@ -33,7 +33,17 @@ $(document).ready(function() {
 
     $("button.url").click(function() {
       keyword();
-        alert(gif);
+
+      var copyThis = gif;
+
+      new Clipboard('.url', {
+          text: function(trigger) {
+              return copyThis;
+          }
+      });
+
+      alert("URL was copied!");
+
     });
 
 
