@@ -36,13 +36,20 @@ $(document).ready(function() {
         alert(gif);
     });
 
-    $('.controls').mouseenter(function() {
-        $('.container').addClass('blur');
-    });
+    console.log($( window ).width());
 
-    $('.controls').mouseleave(function() {
-        $('.container').removeClass('blur');
-    });
+    if ($(window).width() > 1024) {
+      $('.controls').mouseenter(function() {
+          $('.container').addClass('blur');
+      });
+
+      $('.controls').mouseleave(function() {
+          $('.container').removeClass('blur');
+      });
+    }
+
+
+
 
     function keyword() {
       if ($('.inputBox').val() === "") {
