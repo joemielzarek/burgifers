@@ -59,10 +59,10 @@ input {
     text-align: center;
 }
 
-.blur {
+/*.blur {
     filter: blur(30px) hue-rotate(330deg);
     transition: filter .25s linear;
-}
+}*/
 
 button {
     background: transparent;
