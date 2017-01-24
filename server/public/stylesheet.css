@@ -59,10 +59,19 @@ input {
     text-align: center;
 }
 
-/*.blur {
-    filter: blur(30px) hue-rotate(330deg);
+.controls-container {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.blur {
+    /*filter: blur(30px);*/
+    box-shadow: 1px 1px 1px white;
     transition: filter .25s linear;
-}*/
+}
 
 button {
     background: transparent;

@@ -16,12 +16,14 @@ $(document).ready(function() {
     $(".inputBox").keypress(function(event) {
         if (event.which == 13) {
             event.preventDefault();
+            i = 0;
             get();
         }
     });
 
     $("button.submit").click(function() {
       keyword();
+      i = 0;
         get();
     });
 
@@ -49,11 +51,11 @@ $(document).ready(function() {
 
     // if ($(window).width() > 1024) {
     //   $('.controls').mouseenter(function() {
-    //       $('.container').addClass('blur');
+    //       $('.controls').addClass('blur');
     //   });
     //
     //   $('.controls').mouseleave(function() {
-    //       $('.container').removeClass('blur');
+    //       $('.controls').removeClass('blur');
     //   });
     // }
 
